@@ -33,6 +33,7 @@
 		F8DDFF201F2C130A006B47D8 /* ParticleTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParticleTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8DDFF221F2C130A006B47D8 /* ParticleTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticleTest.swift; sourceTree = "<group>"; };
 		F8DDFF241F2C130A006B47D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8DDFF281F2C14E1006B47D8 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +78,7 @@
 				F810322C1F2BFD940064866F /* main.swift */,
 				F81032331F2BFE010064866F /* ConsoleIO.swift */,
 				F81032351F2BFEDC0064866F /* Panagram.swift */,
+				F8DDFF281F2C14E1006B47D8 /* Media.xcassets */,
 			);
 			path = ParticleTracker;
 			sourceTree = "<group>";
