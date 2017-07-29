@@ -10,6 +10,7 @@
 		F810322D1F2BFD940064866F /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F810322C1F2BFD940064866F /* main.swift */; };
 		F81032341F2BFE010064866F /* ConsoleIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81032331F2BFE010064866F /* ConsoleIO.swift */; };
 		F81032361F2BFEDC0064866F /* Panagram.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81032351F2BFEDC0064866F /* Panagram.swift */; };
+		F8DDFF231F2C130A006B47D8 /* ParticleTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DDFF221F2C130A006B47D8 /* ParticleTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,10 +30,20 @@
 		F810322C1F2BFD940064866F /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		F81032331F2BFE010064866F /* ConsoleIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsoleIO.swift; sourceTree = "<group>"; };
 		F81032351F2BFEDC0064866F /* Panagram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Panagram.swift; sourceTree = "<group>"; };
+		F8DDFF201F2C130A006B47D8 /* ParticleTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParticleTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8DDFF221F2C130A006B47D8 /* ParticleTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticleTest.swift; sourceTree = "<group>"; };
+		F8DDFF241F2C130A006B47D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		F81032261F2BFD940064866F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8DDFF1D1F2C130A006B47D8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -46,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				F810322B1F2BFD940064866F /* ParticleTracker */,
+				F8DDFF211F2C130A006B47D8 /* ParticleTest */,
 				F810322A1F2BFD940064866F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				F81032291F2BFD940064866F /* ParticleTracker */,
+				F8DDFF201F2C130A006B47D8 /* ParticleTest.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -66,6 +79,15 @@
 				F81032351F2BFEDC0064866F /* Panagram.swift */,
 			);
 			path = ParticleTracker;
+			sourceTree = "<group>";
+		};
+		F8DDFF211F2C130A006B47D8 /* ParticleTest */ = {
+			isa = PBXGroup;
+			children = (
+				F8DDFF221F2C130A006B47D8 /* ParticleTest.swift */,
+				F8DDFF241F2C130A006B47D8 /* Info.plist */,
+			);
+			path = ParticleTest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -88,6 +110,23 @@
 			productReference = F81032291F2BFD940064866F /* ParticleTracker */;
 			productType = "com.apple.product-type.tool";
 		};
+		F8DDFF1F1F2C130A006B47D8 /* ParticleTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8DDFF271F2C130A006B47D8 /* Build configuration list for PBXNativeTarget "ParticleTest" */;
+			buildPhases = (
+				F8DDFF1C1F2C130A006B47D8 /* Sources */,
+				F8DDFF1D1F2C130A006B47D8 /* Frameworks */,
+				F8DDFF1E1F2C130A006B47D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ParticleTest;
+			productName = ParticleTest;
+			productReference = F8DDFF201F2C130A006B47D8 /* ParticleTest.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -99,6 +138,9 @@
 				ORGANIZATIONNAME = "Don Sleeter";
 				TargetAttributes = {
 					F81032281F2BFD940064866F = {
+						CreatedOnToolsVersion = 9.0;
+					};
+					F8DDFF1F1F2C130A006B47D8 = {
 						CreatedOnToolsVersion = 9.0;
 					};
 				};
@@ -116,9 +158,20 @@
 			projectRoot = "";
 			targets = (
 				F81032281F2BFD940064866F /* ParticleTracker */,
+				F8DDFF1F1F2C130A006B47D8 /* ParticleTest */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F8DDFF1E1F2C130A006B47D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F81032251F2BFD940064866F /* Sources */ = {
@@ -128,6 +181,14 @@
 				F810322D1F2BFD940064866F /* main.swift in Sources */,
 				F81032341F2BFE010064866F /* ConsoleIO.swift in Sources */,
 				F81032361F2BFEDC0064866F /* Panagram.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8DDFF1C1F2C130A006B47D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8DDFF231F2C130A006B47D8 /* ParticleTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +319,32 @@
 			};
 			name = Release;
 		};
+		F8DDFF251F2C130A006B47D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 96J2PPD4HG;
+				INFOPLIST_FILE = ParticleTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = stonecanyon.ParticleTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		F8DDFF261F2C130A006B47D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 96J2PPD4HG;
+				INFOPLIST_FILE = ParticleTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = stonecanyon.ParticleTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -277,6 +364,16 @@
 				F81032321F2BFD940064866F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8DDFF271F2C130A006B47D8 /* Build configuration list for PBXNativeTarget "ParticleTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8DDFF251F2C130A006B47D8 /* Debug */,
+				F8DDFF261F2C130A006B47D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
