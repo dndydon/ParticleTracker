@@ -8,5 +8,12 @@
 
 import Foundation
 
-print("Hello, World!")
 
+let panagram = Panagram()
+// panagram.staticMode()
+
+if CommandLine.argc < 2 {
+  //TODO: Handle interactive mode
+} else {
+  panagram.staticMode()
+}
