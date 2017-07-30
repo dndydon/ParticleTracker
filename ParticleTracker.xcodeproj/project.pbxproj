@@ -64,7 +64,10 @@
 		F81032201F2BFD940064866F = {
 			isa = PBXGroup;
 			children = (
-				F8E326E31F2DAE8E007F8B55 /* Supporting Files */,
+				F8E326E41F2DAE8E007F8B55 /* CHANGELOG.md */,
+				F8E326E51F2DAE8E007F8B55 /* LICENSE.txt */,
+				F8E326E61F2DAE8E007F8B55 /* Package.swift */,
+				F8E326E71F2DAE8E007F8B55 /* README.md */,
 				F810322B1F2BFD940064866F /* ParticleTracker */,
 				F8E326DF1F2DAE63007F8B55 /* ParticleTests */,
 				F810322A1F2BFD940064866F /* Products */,
@@ -108,18 +111,6 @@
 			);
 			path = ParticleTests;
 			sourceTree = SOURCE_ROOT;
-		};
-		F8E326E31F2DAE8E007F8B55 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				F8E326E41F2DAE8E007F8B55 /* CHANGELOG.md */,
-				F8E326E51F2DAE8E007F8B55 /* LICENSE.txt */,
-				F8E326E61F2DAE8E007F8B55 /* Package.swift */,
-				F8E326E71F2DAE8E007F8B55 /* README.md */,
-			);
-			name = "Supporting Files";
-			path = "ParticleTracker/Supporting Files";
-			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
