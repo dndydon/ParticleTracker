@@ -11,8 +11,9 @@
 		F81032341F2BFE010064866F /* ConsoleIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81032331F2BFE010064866F /* ConsoleIO.swift */; };
 		F81032361F2BFEDC0064866F /* Panagram.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81032351F2BFEDC0064866F /* Panagram.swift */; };
 		F8DDFF351F2D2EEC006B47D8 /* Tags_Items.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DDFF341F2D2EEC006B47D8 /* Tags_Items.swift */; };
-		F8E326E21F2DAE63007F8B55 /* ParticleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E326E11F2DAE63007F8B55 /* ParticleTests.swift */; };
 		F8E326E81F2DAE8E007F8B55 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E326E61F2DAE8E007F8B55 /* Package.swift */; };
+		F8E326E91F2DB081007F8B55 /* ParticleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E326E11F2DAE63007F8B55 /* ParticleTests.swift */; };
+		F8E326EA1F2DB08C007F8B55 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F8E326E01F2DAE63007F8B55 /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -199,6 +200,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8E326EA1F2DB08C007F8B55 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,7 +214,6 @@
 				F810322D1F2BFD940064866F /* main.swift in Sources */,
 				F81032341F2BFE010064866F /* ConsoleIO.swift in Sources */,
 				F8E326E81F2DAE8E007F8B55 /* Package.swift in Sources */,
-				F8E326E21F2DAE63007F8B55 /* ParticleTests.swift in Sources */,
 				F81032361F2BFEDC0064866F /* Panagram.swift in Sources */,
 				F8DDFF351F2D2EEC006B47D8 /* Tags_Items.swift in Sources */,
 			);
@@ -222,6 +223,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8E326E91F2DB081007F8B55 /* ParticleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
