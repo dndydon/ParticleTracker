@@ -2,7 +2,7 @@
 **Image stack analyzer written in Swift**
 
 [![Language Swift 4.0](https://img.shields.io/badge/Language-Swift%204.0-orange.svg?style=flat)](https://swift.org)
-[![Language Swift 4.0](https://img.shields.io/badge/XCode%209%20beta4-orange.svg?style=flat)](https://developer.apple.com/xcode/)
+[![Language Swift 4.0](https://img.shields.io/badge/XCode%209%204.0-orange.svg?style=flat)](https://developer.apple.com/xcode/)
 [![Platforms OSX](https://img.shields.io/badge/Platforms-OS%20X-lightgray.svg?style=flat)](http://www.apple.com)
 [![License MIT](https://img.shields.io/badge/License-MIT-lightgrey.svg?style=flat)](https://github.com/dndydon/ParticleTracker/blob/master/LICENSE.txt)
 
