@@ -46,7 +46,7 @@ At first we need to read in and list out summary information for a given hierarc
 ```
 particletracker -list -subject <subject folder path>
 ```
-where <subject folder path> is the name of your subject, e.g S376.
+where **subject folder path** is the name of your subject, e.g S376.
 
 To actually process the data we will need a few different options. The main usage command will look like this:
 ```
@@ -54,15 +54,17 @@ particletracker -track -subject <subject folder path>
 ```
 or to limit it to one observation folder:
 ```
-particletracker -track -subject <subject folder path> -observation <IUEspGFP_S376a-001>
+particletracker -track -subject <subject folder path> -observation <folder name>
 ```
-where the <observation folder name> is given to limit the results to just one observation stack.
+where the **observation folder name** is given to limit the results to just one observation stack.
 
 For limiting ParticleTracker to specific images the usage command will look like this:
 ```
 particletracker -track -subject <subject folder path> -observation <folder name> -images <pattern>
 ```
-where <pattern> is something like: 1,2,4,5,6 (skip 3), or 1-10,11-20. I expect we will need control over which images we take and which we reject at the outset, although the ML algorithm may handle image rejection for us, automatically. We do need a way to train image quality control/rejection.
+where **pattern** is something like: 1,2,4,5,6 (skip 3), or 1-10,11-20.
+
+Why this complexity? I expect we will need control over which images we accept and which we reject at the outset, although the ML algorithm may handle image rejection for us, automatically. We do need a way to specify image quality control/rejection.
 
 Like all good command line tools, invoking the command without arguments will display usage help, and also report version, etc. The options will also be abbreviated.
 
@@ -101,15 +103,16 @@ Each type of data quality error will need to be defined and examples of which wi
 
 So the output of ParticleTracker will need to record statistics on characteristic measurements that relate to these errors. For example each observation needs to have a quality score. Each image needs a quality score. We need to be able to sort our best and worst data into ranges that include categories of errors. We need this to be able to have good metrics to develop confidence in the performance of the system in the face of problems with input files as well as the robustness of the software to handle variation in the data.
 
+I am familiar with a similar problem where we developed a scorecard file that was written to the "run" or observation directory. The scorecard file goes with the data and represents the current results and version of the software for easy display in a client program that reads the scorecard and displays relevant parts of the analysis. The scorecard can be used in automated pipelines as well as QA managers and even remote clients that collaborate on the science.
+
 ## Installation
 
 - [Swift Package Manager](https://swift.org/package-manager/):
 
-```
-not implemented yet
-```
+GitHub is a great way to distribute code and share projects, but installing and building on different machines can be a difficult problem. Swift Packages are designed to solve these issues.
 
+Eventually, not at first. Platform requirements are not yet known. We could potentially distribute code to be built and run on Linux, Mac, or someday Windows machines. And iOS, if appropriate.
 
 ## License
-ParticleTracker is released under the MIT license. See [LICENSE](LICENSE.txt) for details.
+ParticleTracker is pre-released here under the MIT license. See [LICENSE](LICENSE.txt) for details. 
 
