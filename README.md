@@ -19,7 +19,9 @@
 - **Machine Learning** analysis of particles and tracks in stacks of images.
 - **Write TIFF or PNG** annotated images.
 - Developed with [unit tests](https://github.com/dndydon/ParticleTracker/blob/master/ParticleTests/ParticleTests.swift)
--
+
+### Common Use Scenario
+Microscopic image data is collected with a specific image format and stored in folder hierarchies with a specific naming system. We are going to need to read in and analyze "stacks" of images that will contain particle spots on a noisy background. We need to detect and recognize spots as particles which we need to "track" as they move across the images in the stack.  ParticleTracker will use image analysis algorithms to process images in series to compute 3D tracking of particles as they move over time. Particles will have identities and we will compute distance vectors for each of them for each image in the stack. I will need more information on exactly what the users of the system need, and what we can expect of the system.
 
 ## Design
 
@@ -45,9 +47,6 @@ Training data sets will need to be created, curated, and used for development. G
 
 ### Read XML config data
 Reading the config and instrument XML data files is not a high priority at first, but the XML files contain data that would be helpful in the analysis or the presentation of results. Some good information is in the text files.
-
-### Common Use Scenario
-Microscopic image data is collected with a specific image format and stored in folder hierarchies with a specific naming system. We are going to need to read in and analyze "stacks" of images that will contain particle spots on a noisy background. We need to detect and recognize spots as particles which we need to "track" as they move across the images in the stack.  ParticleTracker will use image analysis algorithms to process images in series to compute 3D tracking of particles as they move over time. Particles will have identities and we will compute distance vectors for each of them for each image in the stack. I will need more information on exactly what the users of the system need, and what we can expect of the system.
 
 ### Command Line Interface
 A command line interface is a development strategy that will assist testing and development of the process of analysis, without getting bogged down in UI development in the prototyping stage. The command line interface may also be a useful way to use the software in a pipeline production process. In other words, I like to split the processing from the UI client, and the first version will be just the image processing and particle tracking engine, not the client app.
@@ -108,7 +107,6 @@ Metadata summary:
 
 etc...
 ```
-
 Each type of data quality error will need to be defined and examples of which will need to be curated in the training sets.
 
 So the output of ParticleTracker will need to record statistics on characteristic measurements that relate to these errors. For example each observation needs to have a quality score. Each image needs a quality score. We need to be able to sort our best and worst data into ranges that include categories of errors. We need this to be able to have good metrics to develop confidence in the performance of the system in the face of problems with input files as well as the robustness of the software to handle variation in the data.
