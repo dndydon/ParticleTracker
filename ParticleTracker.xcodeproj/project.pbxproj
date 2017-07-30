@@ -32,6 +32,16 @@
 		F810322C1F2BFD940064866F /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		F81032331F2BFE010064866F /* ConsoleIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsoleIO.swift; sourceTree = "<group>"; };
 		F81032351F2BFEDC0064866F /* Panagram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Panagram.swift; sourceTree = "<group>"; };
+		F8957CB31F2E855D00AE3ED1 /* IUEspGFP_S385a-001.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "IUEspGFP_S385a-001.xml"; sourceTree = "<group>"; };
+		F8957CB41F2E855D00AE3ED1 /* IUEspGFP_S385a-001_Cycle00001_CurrentSettings_Ch2_000001.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = "IUEspGFP_S385a-001_Cycle00001_CurrentSettings_Ch2_000001.tif"; sourceTree = "<group>"; };
+		F8957CB51F2E855D00AE3ED1 /* IUEspGFP_S385a-001_Cycle00001_CurrentSettings_Ch2_000002.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = "IUEspGFP_S385a-001_Cycle00001_CurrentSettings_Ch2_000002.tif"; sourceTree = "<group>"; };
+		F8957CB61F2E855D00AE3ED1 /* IUEspGFP_S385a-001_Cycle00001_CurrentSettings_Ch2_000003.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = "IUEspGFP_S385a-001_Cycle00001_CurrentSettings_Ch2_000003.tif"; sourceTree = "<group>"; };
+		F8957CB71F2E855D00AE3ED1 /* IUEspGFP_S385a-001_Cycle00001_CurrentSettings_Ch2_000004.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = "IUEspGFP_S385a-001_Cycle00001_CurrentSettings_Ch2_000004.tif"; sourceTree = "<group>"; };
+		F8957CB81F2E855D00AE3ED1 /* IUEspGFP_S385a-001_Cycle00001_CurrentSettings_Ch2_000005.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = "IUEspGFP_S385a-001_Cycle00001_CurrentSettings_Ch2_000005.tif"; sourceTree = "<group>"; };
+		F8957CB91F2E855D00AE3ED1 /* IUEspGFP_S385a-001_Cycle00001_CurrentSettings_Ch2_000006.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = "IUEspGFP_S385a-001_Cycle00001_CurrentSettings_Ch2_000006.tif"; sourceTree = "<group>"; };
+		F8957CBA1F2E855D00AE3ED1 /* IUEspGFP_S385a-001_ImageWindow1Ch2-ZSeriesReference.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = "IUEspGFP_S385a-001_ImageWindow1Ch2-ZSeriesReference.tif"; sourceTree = "<group>"; };
+		F8957CBB1F2E855D00AE3ED1 /* IUEspGFP_S385a-001Config.cfg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "IUEspGFP_S385a-001Config.cfg"; sourceTree = "<group>"; };
+		F8957CBC1F2E855D00AE3ED1 /* singleframe.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = singleframe.txt; sourceTree = "<group>"; };
 		F8DDFF281F2C14E1006B47D8 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		F8DDFF341F2D2EEC006B47D8 /* Tags_Items.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tags_Items.swift; sourceTree = "<group>"; };
 		F8E326831F2DA0D0007F8B55 /* ParticleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParticleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,6 +82,7 @@
 				F8E326E71F2DAE8E007F8B55 /* README.md */,
 				F810322B1F2BFD940064866F /* ParticleTracker */,
 				F8E326DF1F2DAE63007F8B55 /* ParticleTests */,
+				F8957CB21F2E855D00AE3ED1 /* DataFiles */,
 				F810322A1F2BFD940064866F /* Products */,
 				F8DDFF2B1F2D224D006B47D8 /* Frameworks */,
 			);
@@ -96,6 +107,23 @@
 				F8DDFF281F2C14E1006B47D8 /* Media.xcassets */,
 			);
 			path = ParticleTracker;
+			sourceTree = "<group>";
+		};
+		F8957CB21F2E855D00AE3ED1 /* DataFiles */ = {
+			isa = PBXGroup;
+			children = (
+				F8957CB31F2E855D00AE3ED1 /* IUEspGFP_S385a-001.xml */,
+				F8957CB41F2E855D00AE3ED1 /* IUEspGFP_S385a-001_Cycle00001_CurrentSettings_Ch2_000001.tif */,
+				F8957CB51F2E855D00AE3ED1 /* IUEspGFP_S385a-001_Cycle00001_CurrentSettings_Ch2_000002.tif */,
+				F8957CB61F2E855D00AE3ED1 /* IUEspGFP_S385a-001_Cycle00001_CurrentSettings_Ch2_000003.tif */,
+				F8957CB71F2E855D00AE3ED1 /* IUEspGFP_S385a-001_Cycle00001_CurrentSettings_Ch2_000004.tif */,
+				F8957CB81F2E855D00AE3ED1 /* IUEspGFP_S385a-001_Cycle00001_CurrentSettings_Ch2_000005.tif */,
+				F8957CB91F2E855D00AE3ED1 /* IUEspGFP_S385a-001_Cycle00001_CurrentSettings_Ch2_000006.tif */,
+				F8957CBA1F2E855D00AE3ED1 /* IUEspGFP_S385a-001_ImageWindow1Ch2-ZSeriesReference.tif */,
+				F8957CBB1F2E855D00AE3ED1 /* IUEspGFP_S385a-001Config.cfg */,
+				F8957CBC1F2E855D00AE3ED1 /* singleframe.txt */,
+			);
+			path = DataFiles;
 			sourceTree = "<group>";
 		};
 		F8DDFF2B1F2D224D006B47D8 /* Frameworks */ = {
