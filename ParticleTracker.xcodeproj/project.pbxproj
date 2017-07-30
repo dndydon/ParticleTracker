@@ -13,7 +13,6 @@
 		F8DDFF351F2D2EEC006B47D8 /* Tags_Items.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DDFF341F2D2EEC006B47D8 /* Tags_Items.swift */; };
 		F8E326E81F2DAE8E007F8B55 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E326E61F2DAE8E007F8B55 /* Package.swift */; };
 		F8E326E91F2DB081007F8B55 /* ParticleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E326E11F2DAE63007F8B55 /* ParticleTests.swift */; };
-		F8E326EA1F2DB08C007F8B55 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F8E326E01F2DAE63007F8B55 /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -200,7 +199,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F8E326EA1F2DB08C007F8B55 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
