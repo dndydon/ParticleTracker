@@ -33,7 +33,7 @@
 		F81032331F2BFE010064866F /* ConsoleIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsoleIO.swift; sourceTree = "<group>"; };
 		F81032351F2BFEDC0064866F /* Panagram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Panagram.swift; sourceTree = "<group>"; };
 		F8DDFF281F2C14E1006B47D8 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
-		F8DDFF341F2D2EEC006B47D8 /* Tags_Items.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Tags_Items.swift; path = /Users/donsleeter/Developer/ParticleTracker/ParticleTracker/Tags_Items.swift; sourceTree = "<absolute>"; };
+		F8DDFF341F2D2EEC006B47D8 /* Tags_Items.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tags_Items.swift; sourceTree = "<group>"; };
 		F8E326831F2DA0D0007F8B55 /* ParticleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParticleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8E326E01F2DAE63007F8B55 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F8E326E11F2DAE63007F8B55 /* ParticleTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParticleTests.swift; sourceTree = "<group>"; };
