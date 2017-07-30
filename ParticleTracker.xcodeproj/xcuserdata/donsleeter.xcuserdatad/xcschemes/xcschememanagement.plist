@@ -4,13 +4,15 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>ParticleTest.xcscheme</key>
+		<key>ParticleTests.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>2</integer>
 		</dict>
 		<key>ParticleTracker.xcscheme</key>
 		<dict>
+			<key>isShown</key>
+			<true/>
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
@@ -18,6 +20,11 @@
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>F81032281F2BFD940064866F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F8E326741F2D9D9F007F8B55</key>
 		<dict>
 			<key>primary</key>
 			<true/>

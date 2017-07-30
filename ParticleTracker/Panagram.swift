@@ -29,7 +29,7 @@ class Panagram {
   let consoleIO = ConsoleIO()
   
   func staticMode() {
-    //    consoleIO.printUsage()
+    consoleIO.printUsage()
     
     //1
     let argCount = CommandLine.argc
