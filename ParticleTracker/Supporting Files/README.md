@@ -16,7 +16,7 @@
 ## Features
 - **Read TIFF** data
 - **Write TIFF** data
-- Covered with [unit tests](https://github.com/dndydon/ParticleTracker/blob/master/Tests/ParticleTests.swift)
+- Covered with [unit tests](https://github.com/dndydon/ParticleTracker/blob/master/ParticleTests/ParticleTests.swift)
 - Covered with inline docs
 
 ## Usage
