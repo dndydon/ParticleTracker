@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		F810322D1F2BFD940064866F /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F810322C1F2BFD940064866F /* main.swift */; };
 		F81032341F2BFE010064866F /* ConsoleIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81032331F2BFE010064866F /* ConsoleIO.swift */; };
-		F81032361F2BFEDC0064866F /* Panagram.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81032351F2BFEDC0064866F /* Panagram.swift */; };
+		F81032361F2BFEDC0064866F /* ParticleTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81032351F2BFEDC0064866F /* ParticleTracker.swift */; };
 		F8DDFF351F2D2EEC006B47D8 /* Tags_Items.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DDFF341F2D2EEC006B47D8 /* Tags_Items.swift */; };
 		F8E326E81F2DAE8E007F8B55 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E326E61F2DAE8E007F8B55 /* Package.swift */; };
 		F8E326E91F2DB081007F8B55 /* ParticleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E326E11F2DAE63007F8B55 /* ParticleTests.swift */; };
@@ -31,7 +31,7 @@
 		F81032291F2BFD940064866F /* ParticleTracker */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ParticleTracker; sourceTree = BUILT_PRODUCTS_DIR; };
 		F810322C1F2BFD940064866F /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		F81032331F2BFE010064866F /* ConsoleIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsoleIO.swift; sourceTree = "<group>"; };
-		F81032351F2BFEDC0064866F /* Panagram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Panagram.swift; sourceTree = "<group>"; };
+		F81032351F2BFEDC0064866F /* ParticleTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticleTracker.swift; sourceTree = "<group>"; };
 		F8957CB31F2E855D00AE3ED1 /* IUEspGFP_S385a-001.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "IUEspGFP_S385a-001.xml"; sourceTree = "<group>"; };
 		F8957CB41F2E855D00AE3ED1 /* IUEspGFP_S385a-001_Cycle00001_CurrentSettings_Ch2_000001.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = "IUEspGFP_S385a-001_Cycle00001_CurrentSettings_Ch2_000001.tif"; sourceTree = "<group>"; };
 		F8957CB51F2E855D00AE3ED1 /* IUEspGFP_S385a-001_Cycle00001_CurrentSettings_Ch2_000002.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = "IUEspGFP_S385a-001_Cycle00001_CurrentSettings_Ch2_000002.tif"; sourceTree = "<group>"; };
@@ -102,7 +102,7 @@
 			children = (
 				F810322C1F2BFD940064866F /* main.swift */,
 				F81032331F2BFE010064866F /* ConsoleIO.swift */,
-				F81032351F2BFEDC0064866F /* Panagram.swift */,
+				F81032351F2BFEDC0064866F /* ParticleTracker.swift */,
 				F8DDFF341F2D2EEC006B47D8 /* Tags_Items.swift */,
 				F8DDFF281F2C14E1006B47D8 /* Media.xcassets */,
 			);
@@ -233,7 +233,7 @@
 				F810322D1F2BFD940064866F /* main.swift in Sources */,
 				F81032341F2BFE010064866F /* ConsoleIO.swift in Sources */,
 				F8E326E81F2DAE8E007F8B55 /* Package.swift in Sources */,
-				F81032361F2BFEDC0064866F /* Panagram.swift in Sources */,
+				F81032361F2BFEDC0064866F /* ParticleTracker.swift in Sources */,
 				F8DDFF351F2D2EEC006B47D8 /* Tags_Items.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

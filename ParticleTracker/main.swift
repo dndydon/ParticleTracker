@@ -9,11 +9,11 @@
 import Foundation
 
 
-let panagram = Panagram()
-// panagram.staticMode()
+let app = ParticleTracker()
+app.commandLineMode()
 
 if CommandLine.argc < 2 {
   //TODO: Handle interactive mode
 } else {
-  panagram.staticMode()
+  app.commandLineMode()
 }

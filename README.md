@@ -17,11 +17,23 @@
 ## Features
 - **Read TIFF** data
 - **Machine Learning** analysis of particles and tracks in stacks of images.
-- **Write TIFF or PNG** annotated images.
+- **Annotate and Write TIFF or PNG** annotated images.
 - Developed with [unit tests](https://github.com/dndydon/ParticleTracker/blob/master/ParticleTests/ParticleTests.swift)
 
 ### Common Use Scenario
-Microscopic image data is collected with a specific image format and stored in folder hierarchies with a specific naming system. We are going to need to read in and analyze "stacks" of images that will contain particle spots on a noisy background. We need to detect and recognize spots as particles which we need to "track" as they move across the images in the stack.  ParticleTracker will use image analysis algorithms to process images in series to compute 3D tracking of particles as they move over time. Particles will have identities and we will compute distance vectors for each of them for each image in the stack. I will need more information on exactly what the users of the system need, and what we can expect of the system.
+Stacks of images are often needed to study the dynamics of a Scene. Telescopes, microscopes, and security cameras are example systems that need to analyze and annotate images in stacks.
+
+#### This ParticleTracker application is a macOS command-line and GUI application for:
+- choosing directory of source images
+- previewing images with filenames and other meta-data
+- selecting subsets of images to create image stacks. These selected image stacks are named and a scorecard is created suitable for storing analysis "run" data, quality scores, and meta-data
+- runs have scorecards with metadata. These are designed (initially, at least) for regression testing the particle testing algorithms and persistence of analysis results.
+- display, meta-analysis, and downstream processing of run data results will always be read from the run data scorecards which act as a "layer" over the images themselves, preserving input data integrity.
+- analytical runs, generally described below, will be configurable by command-line or template files named by the application.
+
+Image data is collected with standard image formats and stored in folder hierarchies with a naming system defined by the instrument upstream of this software. We are going to need to read in and analyze "stacks" of images that will contain "particle spots" or "geometrical objects" on a noisy background. We need to detect and recognize spots as particles, or vertices of objects, which we need to "track" as they move across the images in the stack.
+
+ParticleTracker will use various image analysis algorithms to process images in series to compute 3D tracking of particles as they move over time. Particles will have identities and we will compute distance vectors for each of them for each image in the stack.
 
 ## Design
 
@@ -29,13 +41,16 @@ Microscopic image data is collected with a specific image format and stored in f
 TIFF is a standard file type that will be read into Data objects and processed with open-source libraries. I can only guess that we will need to normalize the data to be accurate in quantitative analysis, because noise and dynamic range on images is often problematic. Experience tells us the we may want to pre-process the images a bit before we detect and ID particles.
 
 ### Machine Learning Tech
-We will use Apple's MLKit for machine learning on OS X. After pre-processing images, we will train a ML model to recognize particles and reject artifact spots and smudges.
+We will use Apple's MLKit for machine learning on OS X.
+After pre-processing images, we will train a ML model to recognize particles and reject artifact spots and smudges.
 
-This is a good problem for machine learning. We will use a ML model to recognize the connectedness of spots or particles that are topologically linked in the order of the images.
+Particle tracking is a good problem for machine learning.
+ML models will be used to recognize the connectedness of spots or particles that are topologically linked in the order of the noisy images.
 
 #### Kahn’s algorithm for Topological Sorting
-On the other hand, there is a well-known algorithm that we could use to compute our desired results.
-Topological sorting for Directed Acyclic Graph (DAG) with a linear **minimum distance** ordering of vertices such that for every directed edge uv, vertex u comes before v in the ordering. Topological Sorting is simple, inexpensive, and with our image stacks that are normalized with quality scored particle maps, probably easy to do. Which is great, because if we want to train ML networks to do this for us, we will need "truth" data in large quantity.
+Old technology too! There is a well-known non-ML algorithm that we could use to compute connected graphs of time-series data -- for the desired results.
+
+**Topological sorting for Directed Acyclic Graph** (DAG) with a linear **minimum distance** ordering of vertices such that for every directed edge uv, vertex u comes before v in the ordering. Topological Sorting is simple, inexpensive, and with our image stacks that are normalized with quality scored particle maps, probably easy to do. Which is great, because if we want to train ML networks to do this for us, we will need "truth" data in large quantity.
 
 We will compute the particle sizes and locations and classify each particle according to QA types (input filtering) then feed each spot map into our topological sorting algorithm (for generating truth data), or our ML particle tracker algorithm for comparison. Particle tracks are represented as 3D DAGs, so we can visualize how each particle in the stack relates to each other in a minimum distance sorted graph. Branching is likely in our particle graphs.
 

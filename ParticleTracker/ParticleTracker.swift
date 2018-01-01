@@ -1,5 +1,5 @@
 //
-//  Panagram.swift
+//  ParticleTracker.swift
 //  ParticleTracker
 //
 //  Created by Don Sleeter on 7/28/17.
@@ -24,19 +24,24 @@ enum OptionType: String {
   }
 }
 
-class Panagram {
+class ParticleTracker {
   
   let consoleIO = ConsoleIO()
   
-  func staticMode() {
+  func commandLineMode() {
     consoleIO.printUsage()
     
     //1
     let argCount = CommandLine.argc
     //2
-    let argument = CommandLine.arguments[1]
+    let argument = CommandLine.arguments.dropFirst()
+    //let argument = CommandLine.arguments[1]
     //3
-    let (option, value) = getOption(argument.substring(from: argument.index(argument.startIndex, offsetBy: 1)))
+    let args = argument.split(separator: " ")
+    
+//    let (option, value) = getOption(argument[.from(argument.startIndex, offsetBy: 1)..<index])
+    
+    let (option, value) = getOption(String(describing: args))
     //4
     consoleIO.writeMessage("Argument count: \(argCount) Option: \(option) value: \(value)")
   }
