@@ -23,7 +23,7 @@
 ### Common Use Scenario
 Stacks of images are often needed to study the dynamics of a Scene. Telescopes, microscopes, and security cameras are example systems that need to analyze and annotate images in stacks.
 
-#### This ParticleTracker application is a macOS command-line and GUI application for:
+#### ParticleTracker is a macOS command-line and GUI application for:
 - choosing directory of source images
 - previewing images with filenames and other meta-data
 - selecting subsets of images to create image stacks. These selected image stacks are named and a scorecard is created suitable for storing analysis "run" data, quality scores, and meta-data
