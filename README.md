@@ -11,6 +11,7 @@
 ## Index
 - [Features](#features)
 - [Design](#design )
+- [Command Line Interface](#command-line-interface)
 - [Data Quality Metrics](#data-quality-metrics)
 - [Scorecards](#scorecards )
 - [Roadmap](#roadmap)
