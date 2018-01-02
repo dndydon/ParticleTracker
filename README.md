@@ -162,6 +162,7 @@ The goal of the second version will be to process images
 
 ## Installation
 
+Currently, just clone the repo and open the Xcode project. Future dependencies will use:
 - [Swift Package Manager](https://swift.org/package-manager/):
 
 Platform requirements are not yet confirmed. We could potentially distribute code to be built and run on Linux, Mac, or someday Windows machines. And iOS, if appropriate.
