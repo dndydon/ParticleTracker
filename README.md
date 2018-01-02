@@ -11,6 +11,9 @@
 ## Index
 - [Features](#features)
 - [Design](#design )
+- [Data Quality Metrics](#metrics)
+- [Scorecards](#scorecards )
+- [Roadmap](#roadmap)
 - [Installation](#installation)
 - [License](#license)
 
@@ -148,17 +151,25 @@ Metadata summary:
 
 etc...
 ```
+
+## Data Quality Metrics
+The output of ParticleTracker will need to record statistics on characteristic measurements that relate to several types of data quality errors. For example each observation needs to have a quality score. Each image needs a quality score. We need to be able to sort our best and worst data into ranges that include categories of errors. We need this to be able to have good metrics to develop confidence in the performance of the system in the face of problems with input files as well as the robustness of the software to handle variation in the data.
+
 Each type of data quality error will need to be defined and examples of which will need to be curated in the training sets.
 
-So the output of ParticleTracker will need to record statistics on characteristic measurements that relate to these errors. For example each observation needs to have a quality score. Each image needs a quality score. We need to be able to sort our best and worst data into ranges that include categories of errors. We need this to be able to have good metrics to develop confidence in the performance of the system in the face of problems with input files as well as the robustness of the software to handle variation in the data.
+This storage of qualty data statistics will be useful in developing/tuning Machine Learning Models.
 
+## Scorecards
 I am familiar with a similar problem where we developed a scorecard file that was written to the "run" or observation directory. The scorecard file goes with the data and represents the current results and version of the software for easy display in a client program that reads the scorecard and displays relevant parts of the analysis. The scorecard can be used in automated pipelines as well as QA managers and even remote clients that collaborate on the science.
 
-Scorecard files as output of analysis will be handy, eventually. But not important for the first demo command line interface.
+Scorecard files as output of analysis will eventually be used for automated workflows.
 
-The goal of the first version will be to summarize the contents of the file folder hierarchy, report on some summary statistics and manage file IO of images.
+## Roadmap
+The goal of the first demo command line interface will be to summarize the contents of the file folder hierarchy, report on some summary file statistics, and write ImageStack.json files in Observation folders.
 
-The goal of the second version will be to process images
+The goal of the second version will be to process images.
+
+Scorecards will come later when we have image processing stubbed in and something to write into Scorecards.
 
 ## Installation
 
