@@ -2,7 +2,7 @@
 **Image stack analyzer written in Swift and MLKit**
 
 [![Language Swift 4.0](https://img.shields.io/badge/Language-Swift%204.0-orange.svg?style=flat)](https://swift.org)
-[![Xcode 9](https://img.shields.io/badge/XCode-9%20beta%20-orange.svg?style=flat)](https://developer.apple.com/xcode/)
+[![Xcode 9.2](https://img.shields.io/badge/XCode-9.2%20-orange.svg?style=flat)](https://developer.apple.com/xcode/)
 [![Platforms OS X](https://img.shields.io/badge/Platforms-OS%20X-lightgray.svg?style=flat)](http://www.apple.com)
 [![License MIT](https://img.shields.io/badge/License-MIT-lightgrey.svg?style=flat)](https://github.com/dndydon/ParticleTracker/blob/master/LICENSE.txt)
 
@@ -21,7 +21,7 @@
 - Developed with [unit tests](https://github.com/dndydon/ParticleTracker/blob/master/ParticleTests/ParticleTests.swift)
 
 ### Common Use Scenario
-Stacks of images are often needed to study the dynamics of a Scene. Telescopes, microscopes, and security cameras are example systems that need to analyze and annotate images in stacks.
+Stacks of images are often used to study the dynamics (time or depth) of a Scene. Telescopes, microscopes, and security cameras are example systems that need to analyze and annotate images in stacks.
 
 #### ParticleTracker is a macOS command-line and GUI application:
 - choose a directory of source images, also known as a stack
