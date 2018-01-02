@@ -8,14 +8,20 @@
 
 import Foundation
 
+public class Entry {
+  public var subject = Tag()
+  public var item = Item()
+  public var timeStamp = Date()
+}
+
 public class Item {
-  public var author = "";
-  public var desc = "";
-  public var tag = [Tag]();
+  public var author = ""
+  public var desc = ""
+  public var tag = [Tag]()
 }
 
 public class Tag {
-  public var name = "";
-  public var count: Int?;
+  public var name = ""
+  public var count: Int?
 }
 

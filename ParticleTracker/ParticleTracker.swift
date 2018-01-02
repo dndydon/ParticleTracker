@@ -16,8 +16,8 @@ enum OptionType: String {
   
   init(value: String) {
     switch value {
-    case "a": self = .anagram
     case "p": self = .palindrome
+    case "a": self = .anagram
     case "h": self = .help
     default: self = .unknown
     }

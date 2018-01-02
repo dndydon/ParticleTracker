@@ -80,7 +80,7 @@ An ImageStack is a .json file stored within an Observation folder. It contains t
 
 Run the following commands in Terminal:
 ```
-> particletracker [-list, -process] [-bySubject | -byObservation [<subject folder path>] | -byImageStack [<observation folder path>] | -byRun [<stack file path>]]
+> particletracker [-list, -process, -version, -help] [-bySubject | -byObservation [<subject folder path>] | -byImageStack [<observation folder path>] | -byRun [<stack file path>]]
 ```
 for example,
 ```
@@ -164,9 +164,7 @@ The goal of the second version will be to process images
 
 - [Swift Package Manager](https://swift.org/package-manager/):
 
-GitHub is a great way to distribute code and share projects, but installing and building on different machines can be a difficult problem. Swift Packages are designed to solve these issues.
-
-Eventually, not at first. Platform requirements are not yet known. We could potentially distribute code to be built and run on Linux, Mac, or someday Windows machines. And iOS, if appropriate.
+Platform requirements are not yet confirmed. We could potentially distribute code to be built and run on Linux, Mac, or someday Windows machines. And iOS, if appropriate.
 
 ## License
 ParticleTracker is pre-released here under the MIT license. See [LICENSE](LICENSE.txt) for details.
