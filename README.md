@@ -11,7 +11,7 @@
 ## Index
 - [Features](#features)
 - [Design](#design )
-- [Data Quality Metrics](#metrics)
+- [Data Quality Metrics](#data-quality-metrics)
 - [Scorecards](#scorecards )
 - [Roadmap](#roadmap)
 - [Installation](#installation)
